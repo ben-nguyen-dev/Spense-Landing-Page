@@ -52,26 +52,26 @@ tl1.from('.benefits .benefit__point', {opacity: 0, duration: 1, x: -50, stagger:
 let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".escrow__left",
-        start: "top center",
+        start: "top bottom",
         end: "+=100",
         scrub: false
     }
 });
 
-tl2.from(".escrow__left h1", {y: 75, duration: 1.35})
-    .from(".escrow__left p", {opacity: 0, duration: 1})
-    .from(".escrow__left a", {opacity: 0, duration: 1})
+tl2.from(".escrow__left h1", {y: 75, duration: 1.5})
+    .from(".escrow__left p", {opacity: 0, duration: 1.25})
+    .from(".escrow__left a", {opacity: 0, duration: 1.25})
 
 
 let tl3 = gsap.timeline({
 scrollTrigger: {
     trigger: ".editor__right",
-    start: "top center",
+    start: "top bottom",
     end: "+=100",
     scrub: false
 }
 });
 
-tl3.from(".editor__right h1", {y: 75, duration: 1.35})
-    .from(".editor__right p", {opacity: 0, duration: 1})
-    .from(".editor__right a", {opacity: 0, duration: 1})
+tl3.from(".editor__right h1", {y: 75, duration: 1.5})
+    .from(".editor__right p", {opacity: 0, duration: 1.25})
+    .from(".editor__right a", {opacity: 0, duration: 1.25})
